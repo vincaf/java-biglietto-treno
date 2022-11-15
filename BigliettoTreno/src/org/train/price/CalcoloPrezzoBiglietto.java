@@ -44,9 +44,6 @@ public class CalcoloPrezzoBiglietto {
 		} else if (userAge > 65) {
 		    userTicket = (userTicket - userTicket * 40 / 100 );
 		    System.out.println("Prezzo biglietto con sconto 40% per over 65: " + String.format("%.2f", userTicket)+"€");
-		} else if (userAge < 12) {
-			userTicket = 0;
-			System.out.println("Biglietto gratuito per i minori di 12 anni");
 		} else {
 			System.out.println("Prezzo biglietto intero: " + String.format("%.2f",userTicket)+"€");
 		}
